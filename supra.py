@@ -7,10 +7,7 @@ import pygame
 pygame.init()
 WIDTH, HEIGHT = 800, 500
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-icon = pygame.image.load("ico.png")
-pygame.display.set_icon(icon)
-pygame.display.set_caption("SupraToole 1.1.1")
-font = pygame.font.Font("Space_Mono/SpaceMono-Regular.ttf", 24)
+pygame.display.set_caption("SupraTooler 2.0")
 
 
 clock = pygame.time.Clock()
