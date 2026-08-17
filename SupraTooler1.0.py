@@ -2,7 +2,7 @@ from pynput import keyboard
 import pyautogui
 import time
 from ACCIart import art
-
+state = "COMERCE"
 def StarupTelemetry(): 
     time.sleep(0.5)
     print("APP STARTED")
@@ -37,14 +37,14 @@ def on_press(key):
 
     try:
 
-        if keyboard.Key.cmd in pressed and key.char == "2":
+        if keyboard.Key.cmd in pressed and key.char == "3":
             ToTopBar()
             
         elif keyboard.Key.shift in pressed and keyboard.Key.space in pressed:
             ToBottomBar()
 
 
-        elif keyboard.Key.cmd in pressed and key.char == "3":
+        elif keyboard.Key.cmd in pressed and key.char == "2":
             ToTopLeftBar()
         
     except:

@@ -19,9 +19,6 @@ for event in pygame.event.get():
 
 screen.fill((0, 0, 0))
 
-text = font.render("SupraTooler", True, (255, 255, 255))
-text_rect = text.get_rect(center=(400, 250))
-screen.blit(text, text_rect)
 pygame.time.wait(2000)
 
 pygame.display.flip()
