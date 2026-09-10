@@ -25,24 +25,28 @@ else:
 pressed = set()
 
 def ToTopBar():
-    pyautogui.moveTo(2000, 0)
+    pyautogui.moveTo(2500, 0)
     pyautogui.click()
 
 def ToBottomBar():
     pyautogui.moveTo(1100, 1500)
     pyautogui.click()
 
-
+def close():
+	pyautogui.moveTo(-2500, 0)
 
 def on_press(key):
     pressed.add(key)
 
     try:
-        if keyboard.Key.cmd in pressed:
+        if keyboard.Key.f1 in pressed:
             ToTopBar()
 
-        elif keyboard.Key.shift in pressed:
+        elif keyboard.Key.f2 in pressed:
             ToBottomBar()
+
+        elif keyboard.Key.cmd in pressed and keyboard.KeyCode.from_char('w'):
+            close()
     except:
         pass
 def on_release(key):
