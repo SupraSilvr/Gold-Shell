@@ -25,11 +25,11 @@ else:
 pressed = set()
 
 def ToTopBar():
-    pyautogui.moveTo(1200, 0)
+    pyautogui.moveTo(2000, 0)
     pyautogui.click()
 
 def ToBottomBar():
-    pyautogui.moveTo(1100, 1350)
+    pyautogui.moveTo(1100, 1500)
     pyautogui.click()
 
 
@@ -37,24 +37,20 @@ def ToBottomBar():
 def on_press(key):
     pressed.add(key)
 
-ToTopBar()
+    try:
+        if keyboard.Key.cmd in pressed:
+            ToTopBar()
 
- #   try:
-
-#        if keyboard.Key.cmd in pressed:
-#           ToTopBar()
-#           
-#       elif keyboard.Key.shift in pressed:
-#           ToBottomBar()
-#
-#
-#        elif keyboard.Key.cmd in pressed and key.char == "2":
-#           ToTopLeftBar()
-        
-#    except:
-#        pass
+        elif keyboard.Key.shift in pressed:
+            ToBottomBar()
+    except:
+        pass
 def on_release(key):
+
     try:
         pressed.discard(key)
     except:
         pass
+
+with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
+    listener.join()
