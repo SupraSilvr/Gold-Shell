@@ -37,15 +37,12 @@ def close():
 
 def on_press(key):
     pressed.add(key)
-
     try:
         if keyboard.Key.f1 in pressed:
             ToTopBar()
-
         elif keyboard.Key.f2 in pressed:
             ToBottomBar()
-
-        elif keyboard.Key.cmd in pressed and keyboard.KeyCode.from_char('w'):
+        elif len(pressed) == 2 and keyboard.Key.cmd and keyboard.KeyCode.from_char('w'):
             close()
     except:
         pass
