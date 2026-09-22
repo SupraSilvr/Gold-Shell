@@ -7,4 +7,7 @@ List of Shortcuts, in development and applied:
 - function 3 (f3) : cursor to the top left of the screen to easily close apps.
 - other functions are being thought of as we speak
 
-/var/folders/tl/6pblpv0j62s17pqc1ks61pdw0000gn/T/TemporaryItems/NSIRD_screencaptureui_xxpkfm/Screenshot\ 2026-08-15\ at\ 13.08.40.png /var/folders/tl/6pblpv0j62s17pqc1ks61pdw0000gn/T/TemporaryItems/NSIRD_screencaptureui_HU76Ec/Screenshot\ 2026-08-15\ at\ 13.09.06.png /var/folders/tl/6pblpv0j62s17pqc1ks61pdw0000gn/T/TemporaryItems/NSIRD_screencaptureui_tNYHhw/Screenshot\ 2026-08-15\ at\ 13.09.36.png
+![Screenshot 1](<images/Screenshot 2026-09-22 at 17.28.01.png>)
+![Screenshot 2](<images/Screenshot 2026-09-22 at 17.33.53.png>)
+![Screenshot 3](<images/Screenshot 2026-09-22 at 17.34.56.png>)
+![Screenshot 4](<images/Screenshot 2026-09-22 at 17.35.16.png>)
